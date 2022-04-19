@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <div class="table">
+    <div class="top">
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="mid">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="main">
+      <div id="main1">
+        <h1>DON'T<br>DWELL<br>ON<br>THE<br>PAST.</h1>
+      </div>
+      <div id="main2">
+        <h1>SEIZE<br>THE<br>DAY</h1>
+      </div>
+    </div>
+  </div>
+  <script>
+    const main1 = document.querySelector('#main1');
+    main1.style.order = 1;
+    const main2 = document.querySelector('#main2');
+    main2.style.order = 2;
+
+    main1.addEventListener('click', function() {
+      console.dir(main1);
+      main1.style.order = 2;
+      main2.style.order = 1;
+    });
+  </script>
+</body>
+</html>
